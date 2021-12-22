@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: auto;
+  background-color: #00d9ff;
+}
+header h1 {
+  float: left;
+  padding: 15px 0;
+  color: #ffff;
+}
+header ul {
+  float: right;
+}
+header ul li {
+  display: inline-block;
+}
+header ul li a {
+  padding: 25px 20px;
+  display: inline-block;
+}
+header ul li a:hover {
+  background-color: #ffff;
+  color: #00d9ff;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Akhir Header */
+
+/* Banner */
+.banner {
+  height: 60vh;
+  background-image: url(gallery/EYHbanner.png);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(20, 129, 143, 0.4);
+}
+.banner h2 {
+  color: #ffff;
+  z-index: 1;
+  padding: 20px 25px;
+  border: 3px solid #ffff;
+}
+section {
+  padding: 50px 0;
+}
+/* Akhir Banner */
+
+/* About */
+section h3 {
+  text-align: center;
+  padding: 20px 0;
+  color: #00d9ff;
+  margin-bottom: 25px;
+}
+#about {
+  padding-bottom: 100px;
+}
+#about p {
+  color: #666;
+  word-spacing: 2px;
+  line-height: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* Akhir About */
+
+/* Projects */
+.cards {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  grid-auto-rows: auto;
+  gap: 20px;
+  font-family: sans-serif;
+  padding-top: 30px;
+}
+
+.cards * {
+  box-sizing: border-box;
+}
+
+.card__image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  border-top: 2px solid #333333;
+  border-right: 2px solid #333333;
+  border-left: 2px solid #333333;
+}
+
+.card__content {
+  line-height: 1.5;
+  font-size: 0.9em;
+  padding: 15px;
+  border-right: 2px solid #333333;
+  border-left: 2px solid #333333;
+  border-bottom: 2px solid #333333;
+}
+
+.video {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  border-top: 2px solid #333333;
+  border-right: 2px solid #333333;
+  border-left: 2px solid #333333;
+}
+/* Akhir Projects */
+
+/* Service */
+#service {
+  background-color: #f9f9f9;
+  padding-bottom: 100px;
+}
+.box {
+  color: #00d9ff;
+}
+.box::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.box .col-4 {
+  width: 25%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  float: left;
+}
+.icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 70px;
+  font-size: 20px;
+  margin: 0 auto;
+}
+.box .col-4 h4 {
+  margin: 10px 0;
+}
+/* Akhir Service */
+
+/* Footer */
+footer {
+  padding: 30px 0;
+  background-color: #333;
+  color: #ffff;
+  text-align: center;
+}
+/* Akhir Footer */
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  header h1 {
+    text-align: center;
+    float: none;
+  }
+  header ul {
+    text-align: center;
+    float: none;
+  }
+  .box .col-4 {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+}
+/* Akhir Responsive */
